@@ -5,114 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   <!-- Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <!--Шапка сайта-->
+    <!--Header section-->
     <header class="header">
-      <div class="container">
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="color">Web</span>Studio</a
-        >
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+      <div class="container header-container">
+      <nav class="nav-container">
+        <a class="logo link" href="./index.html"><span class="logo-txt">Web</span>Studio</a>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link header-link current link" href="./index.html">Студия</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <address class="contact list">
-        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+      <address class="contact-list list">
+        <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
       </div>
     </header>
     <main>
-      <!--Эффективные решения-->
+     <!-- Hero section -->
       <section class="hero">
+        <div class="container">
         <h1 class="hero-title">
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
         <button type="button" class="button primary">Заказать услугу</button>
+        </div>
       </section>
-      <!--Особенности-->
-      <section class="container">
-        <h2 class="features-title">Особенности</h2>
-        <ul class="features list">
-          <li>
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="description">
+      <!--Features section-->
+      <section class="features section">
+        <div class="container">
+        <h2 class="section-title">Особенности</h2>
+        <ul class="features-list list">
+          <li class="features-item">
+            <h3 class="features-subtitle">Внимание к деталям</h3>
+            <p class="features-txt">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3 class="title">Пунктуальность</h3>
-            <p class="description">
+          <li class="features-item">
+            <h3 class="features-subtitle">Пунктуальность</h3>
+            <p class="features-txt">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3 class="title">Планирование</h3>
-            <p class="description">
+          <li class="features-item">
+            <h3 class="features-subtitle">Планирование</h3>
+            <p class="features-txt">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3 class="title">Современные технологии</h3>
-            <p class="description">
+          <li class="features-item">
+            <h3 class="features-subtitle">Современные технологии</h3>
+            <p class="features-txt">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
-      <!--Чем мы занимаемся-->
         <h2 class="example-title">Чем мы занимаемся</h2>
-        <ul class="example list">
-          <li><img src="./images/type.jpg" alt="набор" width="370" /></li>
-          <li><img src="./images/choise.jpg" alt="выбор" width="370" /></li>
-          <li><img src="./images/rainbow.jpg" alt="палитра" width="370" /></li>
+        <ul class="example-list list">
+          <li class="example-img"><img src="./images/type.jpg" alt="набор" width="370" /></li>
+          <li class="example-img"><img src="./images/choise.jpg" alt="выбор" width="370" /></li>
+          <li class="example-img"><img src="./images/rainbow.jpg" alt="палитра" width="370" /></li>
         </ul>
+        </div>
         </section>
-      <!--Наша команда-->
+      <!--Team section-->
       <section class="team">
+        <div class="container">
         <h2 class="title">Наша команда</h2>
-        <ul class="team list">
-          <li>
-            <img
-              src="./images/maninglasses.jpg"
-              alt="ИгорьДемьяненко"
-              width="270"
+        <ul class="team-list list">
+          <li class="team-item">
+            <img class="team-img" src="./images/maninglasses.jpg" alt="ИгорьДемьяненко"  width="270"
             />
-            <h3 class="name">Игорь Демьяненко</h3>
-            <p class="description">Product Designer</p>
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
-          <li>
-            <img src="./images/blondywoman.jpg" alt="ОльгаРепина" width="270" />
-            <h3 class="name">Ольга Репина</h3>
-            <p class="description">Frontend Developer</p>
+          <li class="team-item">
+            <img class="team-img" src="./images/blondywoman.jpg" alt="ОльгаРепина" width="270" />
+            <h3 class="team-name">Ольга Репина</h3>
+            <p class="team-text">Frontend Developer</p>
           </li>
-          <li>
-            <img src="./images/mykolka.jpg" alt="НиколайТарасов" width="270" />
-            <h3 class="name">Николай Тарасов</h3>
-            <p class="description">Marketing</p>
+          <li class="team-item">
+            <img class="team-img" src="./images/mykolka.jpg" alt="НиколайТарасов" width="270" />
+            <h3 class="team-name">Николай Тарасов</h3>
+            <p class="team-text">Marketing</p>
           </li>
-          <li>
-            <img src="./images/mihailo.jpg" alt="МихаилЕрмаков" width="270" />
-            <h3 class="name">Михаил Ермаков</h3>
-            <p class="description">UI Designer</p>
+          <li class="team-item">
+            <img class="team-img" src="./images/mihailo.jpg" alt="МихаилЕрмаков" width="270" />
+            <h3 class="team-name">Михаил Ермаков</h3>
+            <p class="team-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-    <!-- Подвал-->
+    <!-- Footer section -->
     <footer class="footer">
-      <a href="" class="logo"><span class="color">Web</span>Studio</a>
+      <div class="container">
+      <a href="" class="logo"><span class="logo-txt">Web</span>Studio</a>
       <ul class="address list">
         <li>
           <address class="address">
@@ -122,12 +135,13 @@
           </address>
         </li>
         <li>
-          <address class="contact">
+          <address class="contact-list list">
             <a href="mailto:info@example.com" class="link">info@example.com</a>
             <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
           </address>
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>
