@@ -24,6 +24,8 @@ body {
     text-decoration: none;
 }
 .list {
+    padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 
@@ -34,6 +36,20 @@ h4,
 h5,
 h6 {
     font-family: Roboto, sans-serif;
+}
+
+/* Header */
+
+.header {
+background-color: var(--primary-bg-color);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+    background-color: var(--primary-bg-color);
 }
 
 /* Logo */
@@ -96,13 +112,16 @@ h6 {
 /* Hero */
 
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
     color: #fff;
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    outline: 2px solid tomato;
 }
 
 .hero {
@@ -111,6 +130,11 @@ h6 {
 
 /* Features */
 
+.features-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
 .features .title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -118,6 +142,7 @@ h6 {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .features .description {
@@ -131,7 +156,7 @@ h6 {
 
 /* Team */
 
-.example .title,
+.example-title,
 .team .title {
     color: var(--title-text-color);
         font-weight: 700;
@@ -165,9 +190,13 @@ h6 {
 /* Button */
 
 .button {
+    display: inline-block;
     background-color: #F5F4FA;
     color: var(--title-text-color);
     cursor: pointer;
+    border-radius: 4px;
+    min-width: 145px;
+    text-align: center;
 }
 
 .button.primary {
@@ -180,7 +209,7 @@ h6 {
     line-height: 1.88;
     display: flex;
     align-items: center;
-    text-align: center;
+    padding: 10px 32px;
 }
 
 .button.secondary {
@@ -191,8 +220,8 @@ h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
 
 }
 
