@@ -294,15 +294,22 @@ p {
 .team-list {
     display: flex;
     padding-bottom: 94px;
+    flex-wrap: nowrap;
+    gap: var(--indent);
+    --items: 4;
+    --indent: 30px;
+    
+
+
 }
 
 .team-item {
-    margin-right: 30px;
     background-color: var(--primary-bg-color);
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .team-img {
-    margin-bottom: 30px;
+ margin-bottom: 30px;
 }
 
 .team-name {
@@ -313,6 +320,7 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
+
 }
 
 .team-text {
@@ -510,4 +518,5 @@ p {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-bottom: 60px;
 }
