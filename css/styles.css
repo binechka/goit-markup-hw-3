@@ -76,13 +76,14 @@ p {
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--header-border);
-    }
+}
 
 
 
 .header {
     background-color: var(--primary-bg-color);
+    border-bottom: 1px solid var(--header-border);
+    
 }
 
 
@@ -151,6 +152,7 @@ p {
 .contact-link {
     color: var(--primary-text-color);
     font-family: var(--main-font);
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -172,13 +174,14 @@ p {
 /* Hero section */
 
 .hero {
-    background-color: var(--primary-bg-color);
+    
+    background-color: var(--hero-bg-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
-.hero .container {
-    background-color: var(--hero-bg-color);
-    padding-bottom: 200px;
-}
+
 
 .hero-title {
     margin-top: 0px;
@@ -190,13 +193,13 @@ p {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
+
 }
 
 
 /* Features */
 
-.section {
+.features-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -207,6 +210,9 @@ p {
     margin-bottom: 0;
 }
 
+.features-item {
+    width: 270px;
+}
 .features-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -250,9 +256,10 @@ p {
 
 }
 
-.example-title {
-    padding-top: 94px;
+.example-section {
+    padding-bottom: 94px;
 }
+
 .example-list {
     display: flex;
     /* margin-bottom: 94px; */
@@ -266,15 +273,12 @@ p {
 
 /* Team */
 .team {
-    background-color: var(--primary-bg-color);
+    background-color: var(--btn-color);
 }
-.team.section {
+.team .section {
     padding-bottom: 0px;
 }
 
-.team .container {
-    background-color: var(--btn-color);
-}
 
 .example-title,
 .team-title {
@@ -299,8 +303,6 @@ p {
     --items: 4;
     --indent: 30px;
     
-
-
 }
 
 .team-item {
@@ -308,10 +310,11 @@ p {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-.team-img {
- margin-bottom: 30px;
-}
 
+.team-description {
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .team-name {
     color: var(--title-text-color);
     font-weight: 500;
@@ -319,7 +322,7 @@ p {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -330,7 +333,6 @@ p {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
 }
 
 
@@ -342,7 +344,6 @@ p {
     color: var(--title-text-color);
     cursor: pointer;
     border-radius: 4px;
-    min-width: 145px;
     text-align: center;
 }
 
@@ -370,7 +371,10 @@ p {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    padding: 6px 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
     border: none;
 
 }
@@ -398,6 +402,8 @@ p {
 
 .filters {
     background-color: var(--primary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filters-title {
@@ -457,6 +463,10 @@ p {
     gap: var(--indent);
 }
 
+.projects-description {
+padding-top: 20px;
+padding-bottom: 20px;
+}
 .projects-txt {
     color: var(--primary-text-color);
     font-weight: 400;
@@ -469,12 +479,12 @@ p {
 
 
 /* Footer */
-.footer .container {
-    background-color: var(--hero-bg-color);
-}
+
 
 .footer {
-    background-color: var(--primary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-bg-color);
 }
 
 .footer .logo {
@@ -486,7 +496,6 @@ p {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-top: 60px;
     padding-bottom: 20px;
 }
 .address {
@@ -518,5 +527,8 @@ p {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 60px;
+}
+
+.footer-contact-link {
+    color: var(--footer-contact-color);
 }
