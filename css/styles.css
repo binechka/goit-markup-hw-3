@@ -274,6 +274,8 @@ p {
 /* Team */
 .team {
     background-color: var(--btn-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team .section {
     padding-bottom: 0px;
@@ -293,11 +295,9 @@ p {
 
 .team-title {
     background-color: var(--btn-color);
-    padding-top: 94px;
 }
 .team-list {
     display: flex;
-    padding-bottom: 94px;
     flex-wrap: nowrap;
     gap: var(--indent);
     --items: 4;
@@ -430,7 +430,6 @@ padding-bottom: 30px;
     display: block;
     max-width: 100%;
     height: auto;
-    padding-bottom: 20px;
 }
 
 .projects-title {
@@ -473,7 +472,6 @@ padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    padding-bottom: 20px;
     padding-left: 24px;
 }
 
@@ -529,6 +527,6 @@ padding-bottom: 20px;
     letter-spacing: 0.03em;
 }
 
-.footer-contact-link {
-    color: var(--footer-contact-color);
+.footer-contact-link:not(:last-child) {
+    padding-bottom: 9px;
 }
