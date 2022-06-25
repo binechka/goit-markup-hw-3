@@ -141,7 +141,7 @@ p {
     color: var(--accent-color);
 }
 
-.contact-list {
+.header-contact-list {
     display: flex;
     gap: 50px;
 }
