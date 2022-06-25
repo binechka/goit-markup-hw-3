@@ -162,6 +162,7 @@ p {
 
 .contact-link:last-child {
     margin-right: 0;
+    min-width: 122px;
 }
 
 .contact .link:hover,
@@ -415,7 +416,7 @@ p {
     overflow: hidden;
     }
 
-.filters-button {
+.button-item:not(:last-child) {
     margin-right: 9px;
 }
 
@@ -428,8 +429,8 @@ p {
 }
 
 .projects-title {
-    padding-bottom: 4px;
-    padding-left: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .projects-list .title {
@@ -467,7 +468,7 @@ padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    padding-left: 24px;
+    margin-left: 24px;
 }
 
 
@@ -520,7 +521,9 @@ padding-bottom: 20px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
 }
+
 
 .footer-contact-link:not(:last-child) {
     margin-bottom: 9px;
