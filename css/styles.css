@@ -143,6 +143,7 @@ p {
 
 .contact-list {
     display: flex;
+    gap: 50px;
 }
 
 .contact-link {
@@ -156,13 +157,9 @@ p {
 
 }
 
-.header-contact-link {
-    margin-right: 59px;
-}
 
 .contact-link:last-child {
     margin-right: 0;
-    min-width: 122px;
 }
 
 .contact .link:hover,
