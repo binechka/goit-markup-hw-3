@@ -9,7 +9,7 @@
     --accent-color: #2196F3;
     --primary-bg-color: #fff;
     --logo-color: #000000;
-    --hero-bg-color: #2F303A;
+    --footer-bg-color:#2F303A;
     --btn-color: #F5F4FA;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --header-border: #ECECEC;
@@ -170,7 +170,8 @@ p {
 /* Hero section */
 
 .hero { 
-    background-color: var(--hero-bg-color);
+    background-color: var(--footer-bg-color);
+    background-image: url();
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -475,7 +476,7 @@ padding-bottom: 20px;
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--hero-bg-color);
+    background-color: var(--footer-bg-color);
 }
 
 .footer .logo {
